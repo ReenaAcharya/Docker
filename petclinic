@@ -5,6 +5,6 @@ RUN cd ~
 
 RUN wget http://ec2-52-77-117-232.ap-southeast-1.compute.amazonaws.com:8080/job/AppForDocker/ws/target/petclinic.war
 
-ADD /root/petclinic.war $CATALINA_HOMES/webapps/
+ADD /home/ec2-user/petclinic.war $CATALINA_HOMES/webapps/
 
 CMD ["catalina.sh", "run"]
