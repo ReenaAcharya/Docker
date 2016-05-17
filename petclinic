@@ -1,4 +1,4 @@
-RUN docker pull tomcat
+FROM tomcat
 MAINTAINER xyz
 
 RUN cd ~
