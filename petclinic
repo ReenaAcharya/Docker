@@ -1,9 +1,6 @@
 FROM tomcat
+
 MAINTAINER xyz
-
-RUN cd ~
-
-RUN wget http://ec2-52-77-117-232.ap-southeast-1.compute.amazonaws.com:8080/job/AppForDocker/ws/target/petclinic.war
 
 ADD http://ec2-52-77-117-232.ap-southeast-1.compute.amazonaws.com:8080/job/AppForDocker/ws/target/petclinic.war $CATALINA_HOMES/webapps/
 
